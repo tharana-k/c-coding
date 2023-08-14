@@ -1,0 +1,16 @@
+#include <stdio.h>
+void swap(int,int);
+int main(){
+ int a =10;
+ int b =20;
+ printf("before swapping value is a=%d,b=%d",a,b);
+ swap(a,b);
+ printf("after swapping value is a=%d,b=%d",a,b);
+}  
+void swap(int a,int b){    
+a = a + b;
+b = a - b;
+a = a - b;
+ printf("after swapping values in funcion a =%d, b=%d",a,b) ;  
+    
+}
